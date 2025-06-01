@@ -35,7 +35,7 @@
           {{ post.title }}
         </h2>
 
-        <p class="text-gray-600 mb-4">{{ post.content }}</p>
+        <div class="text-gray-600 mb-4">{{ post.content | safe }}</div>
 
         <div class="space-x-2 mb-4">
           {% for tag in post.tags %}
